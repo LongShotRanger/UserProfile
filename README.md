@@ -31,15 +31,15 @@ mockData.ts # Mock user & rental data
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/your-username/trek-profile-app.git
-cd trek-profile-app
+git clone https://github.com/LongShotRanger/UserProfile.git
+cd UserProfile
 
-Install Dependencies
+# Install Dependencies
 npm install
 # or
 yarn
 
-Run Locally
+# Run Locally
 
 npm run dev
 # or
