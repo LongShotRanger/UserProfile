@@ -14,8 +14,20 @@ export default function ChangePassword() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
+    const passwordRegex = /^(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]).{6,}$/;
+
+    if (currentPassword == newPassword) {
+      setErrorMsg('Current password and New passwords cannot be same');
+      return;
+    }
+
     if (newPassword !== confirmPassword) {
       setErrorMsg('New passwords do not match');
+      return;
+    }
+
+    if (!passwordRegex.test(newPassword)) {
+      setErrorMsg('Password must be at least 6 characters and contain at least one special character.');
       return;
     }
 
