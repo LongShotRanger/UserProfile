@@ -129,7 +129,9 @@ export default function FAQPage() {
               </button>
 
               <div
-                ref={(el) => (contentRefs.current[index] = el)}
+                ref={(el) => {
+                    contentRefs.current[index] = el;
+                  }}
                 style={{
                   maxHeight: isOpen ? contentRefs.current[index]?.scrollHeight : 0,
                   overflow: "hidden",
