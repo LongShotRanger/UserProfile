@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Trek Rental User Profile App
 
 This is a simple Next.js app for managing user profiles, preferences, and viewing rental history.
