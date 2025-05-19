@@ -29,26 +29,30 @@ export default function Header() {
         {/* Left - Logo */}
         <div className="flex items-center justify-between w-full sm:w-auto">
           <div className="w-full max-w-[150px] hidden sm:block">
-            <Image
-              src={darkMode ? "/images/crosstrek-logo.svg" : "/images/crosstrek-logo-black.svg"}
-              alt="Crosstrekrentals Logo"
-              width={150}
-              height={40}
-              className="object-contain w-full h-auto"
-              priority
-            />
+            <Link href="/" >
+              <Image
+                src={darkMode ? "/images/crosstrek-logo.svg" : "/images/crosstrek-logo-black.svg"}
+                alt="Crosstrekrentals Logo"
+                width={150}
+                height={40}
+                className="object-contain w-full h-auto"
+                priority
+              />
+            </Link>
           </div>
 
           {/* Mobile logo (shown only on small screens) */}
           <div className="w-full max-w-[150px] block sm:hidden">
-            <Image
-              src={darkMode ? "/images/crosstrek-logo-mobile.svg" : "/images/crosstrek-logo-black.svg"}
-              alt="Crosstrekrentals Mobile Logo"
-              width={100} // smaller width for mobile logo, adjust as needed
-              height={30}
-              className="object-contain w-full h-auto"
-              priority
-            />
+            <Link href="/" >
+              <Image
+                src={darkMode ? "/images/crosstrek-logo-mobile.svg" : "/images/crosstrek-logo-black.svg"}
+                alt="Crosstrekrentals Mobile Logo"
+                width={100} // smaller width for mobile logo, adjust as needed
+                height={30}
+                className="object-contain w-full h-auto"
+                priority
+              />
+            </Link>
           </div>
             {/* <span className="text-2xl font-bold text-gray-900 dark:text-white ml-2">
               Crosstrekrentals
@@ -89,8 +93,8 @@ export default function Header() {
         {/* Center - Desktop Nav */}
         <nav className="hidden sm:flex gap-8 font-medium text-gray-900 dark:text-white">
           <Link
-            href="/rent-gear"
-            className={`hover:text-ihYellow ${isActive("/rent-gear") ? "text-ihYellow" : ""}`}
+            href="/rentgear"
+            className={`hover:text-ihYellow ${isActive("/rentgear") ? "text-ihYellow" : ""}`}
           >
             Rent Gear
           </Link>
