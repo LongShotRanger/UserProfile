@@ -106,11 +106,11 @@ vercel link : https://user-profile-git-main-vimleshrawats-projects.vercel.app/pr
 
 ## 📌 Notes
 
--This is a frontend-only project — no backend or server-side persistence.
--All mock data is initially loaded from mockData.ts.
--User updates (profile changes, preferences, etc.) are temporarily stored in localStorage to simulate a save-and-restore experience.
--Hydration issues (due to differences between server-rendered and client-rendered UI) are handled using conditional rendering and useEffect, ensuring consistent dark mode and user settings across loads.
--Easily extendable with real backend APIs and authentication for production use.
+- This is a frontend-only project — no backend or server-side persistence.
+- All mock data is initially loaded from mockData.ts.
+- User updates (profile changes, preferences, etc.) are temporarily stored in localStorage to simulate a save-and-restore experience.
+- Hydration issues (due to differences between server-rendered and client-rendered UI) are handled using conditional rendering and useEffect, ensuring consistent dark mode and user settings across loads.
+- Easily extendable with real backend APIs and authentication for production use.
 
 ---
 
