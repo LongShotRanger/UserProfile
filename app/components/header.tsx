@@ -2,11 +2,11 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { userProfile } from "../../lib/mockData"; // adjust path as needed
+import { userProfile } from "../../lib/mockData";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
-import { useDarkMode } from '../context/DarkModeContext'; // adjust path
+import { useDarkMode } from '../context/DarkModeContext';
 
 export default function Header() {
   const user = userProfile;

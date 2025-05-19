@@ -4,7 +4,7 @@ import { z } from 'zod';
 import { useState, useEffect, useRef } from 'react';
 import { userProfile, rentalHistory } from '../../lib/mockData';
 import ChangePassword from '../profile/ChangePassword';
-import { useDarkMode } from '../context/DarkModeContext'; // update path as needed
+import { useDarkMode } from '../context/DarkModeContext';
 
 
 const profileSchema = z.object({

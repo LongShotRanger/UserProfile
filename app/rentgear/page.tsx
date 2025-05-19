@@ -1,7 +1,7 @@
 'use client';
 
-import { trekDetails } from '../../lib/mockData'; // adjust the path based on your folder structure
-import { rentalGears } from '../../lib/rentalgear'; // Adjust the path if needed
+import { trekDetails } from '../../lib/mockData';
+import { rentalGears } from '../../lib/rentalGear';
 
 export default function RentGearPage() {
   return (
@@ -41,7 +41,7 @@ export default function RentGearPage() {
             <button
               key={gear.id}
               className="text-left transform transition duration-300 hover:scale-[0.98] hover:shadow-lg focus:outline-none border rounded-lg overflow-hidden bg-white dark:bg-gray-800"
-              onClick={() => alert(`Clicked on ${gear.name}`)} // Replace with actual routing or modal
+              onClick={() => alert(`Clicked on ${gear.name}`)}
             >
               <img
                 src={gear.image}

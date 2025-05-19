@@ -1,6 +1,6 @@
 # 🏔️ Trek Rental – User Profile App
 
-A **Next.js** app for managing user profiles, preferences, and viewing gear rental history — built with a clean UI and mock data.
+A **Next.js** app for managing user profiles, preferences, and viewing gear rental history — built with a clean UI, mock data, and smooth client-side state management.
 
 ---
 
@@ -9,7 +9,8 @@ A **Next.js** app for managing user profiles, preferences, and viewing gear rent
 - ✅ View and edit **user profile** (name, phone, bio, photo)
 - 🎛️ Toggle **preferences** like Dark Mode & Email Notifications
 - 📦 View **rental history** with order details
-- 🔐 **Change password** form with validation (optional)
+- 🔐 Secure-style change password form with client-side validation
+- 🧳 View available gear for rent for upcoming treks
 
 ---
 
@@ -18,6 +19,9 @@ A **Next.js** app for managing user profiles, preferences, and viewing gear rent
 - [Next.js 13+](https://nextjs.org/) (App Router)
 - [React](https://reactjs.org/) – Client Components
 - [Tailwind CSS](https://tailwindcss.com/) – utility-first styling
+- [Zod](https://zod.dev/) for schema validation
+- [Lucide React](https://lucide.dev/) for modern icons
+- [TypeScript]
 - 🔗 Deployed on [Vercel](https://vercel.com/)
 
 ---
@@ -100,17 +104,17 @@ This project is ready for **Vercel**:
 2. Visit [vercel.com](https://vercel.com) and import the repo.
 3. Vercel auto-detects Next.js and deploys it instantly (for free 🚀).
 
-vercel link : https://user-profile-git-main-vimleshrawats-projects.vercel.app/profile
+🌐 Live Demo: : https://user-profile-git-main-vimleshrawats-projects.vercel.app/profile
 
 ---
 
 ## 📌 Notes
 
-- This is a frontend-only project — no backend or server-side persistence.
-- All mock data is initially loaded from mockData.ts.
+- Frontend-only: No backend or persistent database.
+- Mock data is pulled from mockData.ts and rentalGear.ts.
 - User updates (profile changes, preferences, etc.) are temporarily stored in localStorage to simulate a save-and-restore experience.
-- Hydration issues (due to differences between server-rendered and client-rendered UI) are handled using conditional rendering and useEffect, ensuring consistent dark mode and user settings across loads.
-- Easily extendable with real backend APIs and authentication for production use.
+- Hydration handled via useEffect to sync client state (like dark mode) with server render.
+- Built for extensibility — easy to plug in backend APIs & auth later.
 
 ---
 
@@ -122,9 +126,11 @@ vercel link : https://user-profile-git-main-vimleshrawats-projects.vercel.app/pr
 
 ## 🧠 Design Decisions
 
-- Local state used to simulate update/save behavior.
+- Local state + localStorage to simulate update/save.
 - Profile image is **preview-only** — not editable yet.
-- Built with raw Tailwind CSS (no component libraries) for full control and simplicity.
+- Built with raw Tailwind CSS — no UI libraries for full control.
+- Used Zod for runtime schema validation.
+- Used Lucide React for consistent icon design.
 
 ---
 
