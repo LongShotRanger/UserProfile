@@ -116,7 +116,7 @@ vercel link : https://user-profile-git-main-vimleshrawats-projects.vercel.app/pr
 
 ## 📸 Preview
 
-> _(Add screenshots or a short demo video here for visual context)_
+> ![User Profile Screenshot](public/images/Crosstrekrentals.png)
 
 ---
 
